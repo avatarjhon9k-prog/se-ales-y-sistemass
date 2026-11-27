@@ -48,10 +48,11 @@ body{font-size:17px}.mu{font-size:15px}svg text{font-size:12px}
 <div id="deck"><div id="bar"></div>
 
 <section class="on"><div class="two" style="align-items:center"><div><p class="k">Universidad Nacional de San Agustín de Arequipa</p>
+<p class="mu">Facultad de Ingeniería de Producción y Servicios · Escuela Profesional de Ingeniería de Telecomunicaciones</p>
 <h1>Transformada de <span>Laplace</span></h1>
 <p style="font-size:19px">Una forma de convertir ecuaciones difíciles en simple álgebra.</p>
 <p style="font-size:20px;color:var(--a)">Transformada inversa y propiedades de traslación</p>
-<p class="mu">Ecuaciones Diferenciales · Ingeniería en Telecomunicaciones · Semana 12</p>
+<p class="mu">Ecuaciones Diferenciales (código 2502117) · Ingeniería en Telecomunicaciones · Semana 12 · Periodo 2026 B</p>
 <div class="pn" style="max-width:520px"><b>Integrantes</b><br>Arias Vilca Gustavo Luis<br>Chambi Ccosi Jhon Carlos<br>Randall Rodrigo Arias Huamaní</div>
 <p class="mu">Docente: Mg. Juan Carlos Hihuaña Hallasi · Usa ← → o los botones inferiores</p></div>
 <svg viewBox="0 0 400 325" style="background:none" role="img" aria-label="Una señal amortiguada en el tiempo y sus polos en el plano s">
@@ -78,23 +79,23 @@ body{font-size:17px}.mu{font-size:15px}svg text{font-size:12px}
 <line class="flow" x1="409" y1="60" x2="450" y2="60" style="stroke:var(--a);stroke-width:2"/><polygon points="458,60 449,55 449,65" style="fill:var(--a)"/><text x="433" y="48" text-anchor="middle" style="font-size:15px;font-weight:700;fill:var(--a)">ℒ⁻¹</text><text x="433" y="82" text-anchor="middle">volver</text>
 <rect x="462" y="25" width="170" height="70" rx="12" style="fill:var(--pn);stroke:var(--bd)"/><text x="547" y="55" text-anchor="middle" style="font-size:14px;fill:var(--tx)">Respuesta</text><text x="547" y="75" text-anchor="middle">de nuevo en t</text></svg>
 <div class="two"><div class="pn"><h3>¿Dónde se usa?</h3><ul><li>Circuitos y filtros en telecomunicaciones.</li><li>Señales que llegan con retraso o con eco.</li><li>Vibraciones y sistemas de control: ¿el sistema se estabiliza o se descontrola?</li></ul></div>
-<div class="pn"><h3>Mini glosario</h3><ul><li><b>t:</b> el tiempo. <b>s:</b> la nueva variable tras traducir.</li><li><b>F(s):</b> la señal f(t) vista en el «idioma s».</li><li><b>Escalón u(t−a):</b> un interruptor que se enciende en t = a.</li><li><b>Polo:</b> valor de s que dice si la señal se apaga, oscila o crece.</li></ul></div></div></section>
+<div class="pn"><h3>Mini glosario</h3><ul><li><b>t:</b> el tiempo. <b>s:</b> la nueva variable tras traducir.</li><li><b>F(s):</b> la señal f(t) vista en el «idioma s».</li><li><b>Escalón u(t−a):</b> un interruptor que se enciende en t = a.</li><li><b>Polo:</b> valor de s que dice si la señal se apaga, oscila o crece.</li></ul></div></div>
+<div class="co"><b>Idea central del texto:</b> la transformada representa señales en otra variable; distinguir una modulación exponencial de un retardo permite aplicar bien las traslaciones.</div></section>
 
-<section><p class="k">Introducción</p><h2>¿Qué estudiaremos?</h2>
-<p>La transformada de Laplace convierte una función del tiempo en una función de la variable compleja <b>s</b>, de modo que señales, retrasos y regímenes transitorios se tratan con álgebra.</p><div class="pn ex"><h3>¿Por qué es importante?</h3><p>En el dominio del tiempo, el comportamiento de un sistema se describe mediante funciones y, muchas veces, ecuaciones diferenciales. Al aplicar Laplace, esas ecuaciones pueden convertirse en relaciones algebraicas que suelen ser más sencillas de resolver.</p><p>Después de resolver el problema en el dominio <b>s</b>, usamos la transformada inversa para regresar al dominio del tiempo y conocer la respuesta física del sistema.</p></div>
-<div class="two"><div class="pn"><h3>Dominio del tiempo</h3><div class="f">f(t)</div><p>Cómo evoluciona la señal con el tiempo.</p></div>
-<div class="pn"><h3>Dominio de Laplace</h3><div class="f">F(s) = ℒ{f(t)}</div><p>La misma señal como expresión en s.</p></div></div>
-<p class="mu">Ruta de hoy:</p><span class="step"><b>1</b> Qué es</span><span class="step"><b>2</b> Cuándo existe</span><span class="step"><b>3</b> Tabla (diccionario)</span><span class="step"><b>4</b> Volver a t</span><span class="step"><b>5</b> Fracciones parciales</span><span class="step"><b>6</b> Corrimientos y retardos</span><span class="step"><b>7</b> Señales reales</span></section>
+<section><p class="k">Presentación del capítulo</p><h2>Qué lograremos hoy</h2>
+<div class="two"><div class="pn"><h3>Al finalizar podrás</h3><ul><li>Calcular transformadas con la definición y la tabla, indicando la región de convergencia.</li><li>Obtener inversas con linealidad, fracciones parciales y cuadrados completos.</li><li>Distinguir una traslación en s (exponencial) de un retardo en t (escalón).</li><li>Representar pulsos y señales amortiguadas y comprobar el resultado.</li></ul></div>
+<div class="pn"><h3>Ruta de estudio: 120 min</h3><table><tbody><tr><td>Definición, existencia y tabla</td><td>25 min</td></tr><tr><td>Inversa y fracciones parciales</td><td>25 min</td></tr><tr><td>Traslaciones en s y en t</td><td>35 min</td></tr><tr><td>Aplicaciones en Telecomunicaciones</td><td>20 min</td></tr><tr><td>Práctica y comprobación</td><td>15 min</td></tr></tbody></table></div></div>
+<div class="co"><b>Para calentar:</b> 1) Integra e<sup>−kt</sup> de 0 a ∞ (k &gt; 0). 2) Descompón 1/[s(s+1)]. 3) Completa el cuadrado en s²+4s+13. 4) Si τ = t−a, ¿cuánto vale t? 5) ¿Desplazar una señal es lo mismo que multiplicarla por una función?</div></section>
 
 <section><p class="k">01 · Definición</p><h2>Transformada unilateral de Laplace</h2>
 <div class="ps"><b class="l">En palabras simples</b>Multiplicamos la señal por un factor que se va apagando con el tiempo (e<sup>−st</sup>) y sumamos todo. Para cada valor de s sale un número; todos juntos forman F(s).</div>
-<div class="f big">F(s) = ℒ{f(t)} = <span class="in"><span class="sg">∫</span><span class="lm"><span>∞</span><span>0</span></span></span> e<sup>−st</sup> f(t) dt</div><div class="pn ex"><h3>Interpretación de la integral</h3><p>La integral acumula los valores de la señal desde el instante inicial hasta el infinito, ponderándolos mediante el factor exponencial. Este factor controla cuánto influye cada instante en el resultado.</p><p>En términos prácticos, la transformada resume el comportamiento temporal de la función en una expresión dependiente de <b>s</b>. Para calcularla, sustituimos la función, integramos y evaluamos los límites cuando la integral converge.</p></div>
-<div class="two"><div class="pn"><h3>Elementos</h3><ul><li><b>f(t):</b> función original.</li><li><b>e<sup>−st</sup>:</b> factor exponencial de ponderación.</li><li><b>s:</b> variable de Laplace.</li><li><b>F(s):</b> transformada.</li><li><b>s = σ + iω:</b> σ atenúa y ω oscila; si t está en segundos, s está en s⁻¹.</li></ul>
+<p class="mu">Solo se usa t ≥ 0. s = σ + iω: σ atenúa y ω oscila. Si t está en segundos, s está en s⁻¹ y, para un voltaje, F tiene unidades V·s.</p>
+<div class="f big">F(s) = ℒ{f(t)} = <span class="in"><span class="sg">∫</span><span class="lm"><span>∞</span><span>0</span></span></span> e<sup>−st</sup> f(t) dt</div><div class="two"><div class="pn"><h3>Elementos</h3><ul><li><b>f(t):</b> función original.</li><li><b>e<sup>−st</sup>:</b> factor exponencial de ponderación.</li><li><b>s:</b> variable de Laplace.</li><li><b>F(s):</b> transformada.</li></ul>
 <div class="f">f(t) = 1 ⇒ F(s) = 1/s, s &gt; 0</div></div>
 <div class="pn"><h3>Explora s</h3><label>s = <b id="sDV"></b><input id="sD" type="range" min=".2" max="5" step=".1" value="1"></label>
 <div class="f" id="fD"></div><svg id="pD" viewBox="0 0 640 190"></svg><svg id="dI" viewBox="0 0 640 190"></svg><p class="mu">Arriba: F(s) = 1/s para s &gt; 0. Abajo: el integrando e<sup>−st</sup>; su área bajo la curva es F(s).</p></div></div></section>
 
-<section><p class="k">02 · Existencia</p><h2>Condiciones de existencia</h2>
+<section><p class="k">Existencia</p><h2>Condiciones de existencia</h2>
 <div class="ps"><b class="l">En palabras simples</b>Para que la suma no se vuelva infinita, la señal no puede crecer más rápido que una exponencial. Con una s lo bastante grande, el factor e<sup>−st</sup> la «controla».</div>
 <div class="two"><div class="pn"><h3>Continuidad por tramos</h3><p>En todo intervalo finito hay un número finito de discontinuidades con límites laterales finitos.</p></div>
 <div class="pn"><h3>Orden exponencial</h3><p>Existen M, a y T con |f(t)| ≤ M·e<sup>at</sup> para t ≥ T.</p></div></div>
@@ -104,63 +105,30 @@ body{font-size:17px}.mu{font-size:15px}svg text{font-size:12px}
 <span id="eS" class="tag"></span><div class="f" id="eV"></div><svg id="eP" viewBox="0 0 640 190"></svg><p class="mu">Integrando e<sup>−(s−2)t</sup>: decae si s &gt; 2 y crece si s ≤ 2.</p></div>
 <div class="co">Son condiciones suficientes, no necesarias para toda función.</div><div class="co"><b>Contraejemplo:</b> f(t) = e<sup>t²</sup> no tiene transformada para ningún s real finito, porque e<sup>t²−st</sup> diverge en la cola. Una expresión racional no basta: el dominio forma parte del par.</div></section>
 
-<section><p class="k">03 · Propiedad</p><h2>Linealidad</h2>
-<div class="ps"><b class="l">En palabras simples</b>Se puede transformar por piezas: cada término se traduce solo y luego se vuelven a juntar con sus coeficientes.</div>
-<div class="f big">ℒ{a·f(t) + b·g(t)} = a·F(s) + b·G(s)</div><div class="pn ex"><h3>¿Cómo se aplica?</h3><p>La propiedad permite separar una suma en transformadas individuales. Primero identificamos cada función, luego buscamos su par en la tabla y finalmente conservamos sus coeficientes.</p><p>Esto evita resolver una integral desde cero para cada combinación. En el ejemplo, la constante y el término lineal se transforman por separado y después se suman sus resultados.</p></div>
-<div class="two"><div class="pn"><h3>Ejemplo: h(t) = 3 + 2t</h3><div class="f">ℒ{3} = 3/s &nbsp; ℒ{2t} = 2/s²</div><div class="f">H(s) = 3/s + 2/s², s &gt; 0</div></div>
-<div class="pn"><h3>Experimenta</h3>
-<label>a = <b id="lAV"></b><input id="lA" type="range" min="-3" max="5" step=".5" value="3"></label>
-<label>b = <b id="lBV"></b><input id="lB" type="range" min="-3" max="5" step=".5" value="2"></label>
-<label>s = <b id="lSV"></b><input id="lS" type="range" min=".5" max="5" step=".1" value="2"></label>
-<div class="f" id="lF"></div><div class="f" id="lV"></div><svg id="lP" viewBox="0 0 640 190"></svg><p class="mu">En el tiempo: a (azul), b·t (naranja) y a + b·t (violeta).</p></div></div></section>
-
-<section><p class="k">Teoría · Deducción</p><h2>De dónde salen los pares</h2>
-<div class="two"><div class="pn"><h3>Constante y exponencial</h3><div class="f">ℒ{1} = <span class="in"><span class="sg">∫</span><span class="lm"><span>∞</span><span>0</span></span></span> e<sup>−st</sup>dt = 1/s, s &gt; 0</div><div class="f">ℒ{e<sup>at</sup>} = <span class="in"><span class="sg">∫</span><span class="lm"><span>∞</span><span>0</span></span></span> e<sup>−(s−a)t</sup>dt = 1/(s−a), s &gt; a</div><p class="mu">La condición sale del límite en infinito, no solo de evitar un denominador nulo.</p></div>
-<div class="pn"><h3>Potencias enteras</h3><div class="f">I<sub>n</sub> = <span class="in"><span class="sg">∫</span><span class="lm"><span>∞</span><span>0</span></span></span> t<sup>n</sup>e<sup>−st</sup>dt = (n/s)·I<sub>n−1</sub>, I₀ = 1/s</div><div class="f">ℒ{t<sup>n</sup>} = n!/s<sup>n+1</sup>, s &gt; 0</div><p class="mu">Integración por partes; los términos de borde se anulan para s &gt; 0.</p></div></div>
-<div class="pn"><h3>Seno y coseno</h3><div class="f"><span class="in"><span class="sg">∫</span><span class="lm"><span>∞</span><span>0</span></span></span> e<sup>−st</sup>e<sup>iωt</sup>dt = 1/(s − iω) = (s + iω)/(s² + ω²)</div>
-<p>La parte real da ℒ{cos ωt} = s/(s²+ω²) y la parte imaginaria ℒ{sin ωt} = ω/(s²+ω²). El numerador del seno es ω: omitirlo altera la amplitud recuperada.</p>
-<p class="mu">cosh y sinh se obtienen como semisuma y semidiferencia de exponenciales. Si t está en segundos, s está en s⁻¹ y, para un voltaje, F tiene unidades de V·s.</p></div></section>
-
-<section><p class="k">04 · Tabla fundamental</p><h2>Pares fundamentales</h2>
-<div class="ps"><b class="l">En palabras simples</b>La tabla es un diccionario: buscas la forma que se parece a tu ejercicio y copias su traducción.</div><div class="pn ex"><h3>Cómo leer la tabla</h3><p>La columna izquierda contiene la función en el tiempo y la columna central muestra su transformada. La tercera columna señala la condición de convergencia que debe respetarse.</p><p>Para usarla, comparamos la función del ejercicio con una forma conocida. Si aparece un coeficiente o una frecuencia, aplicamos la constante correspondiente sin cambiar la estructura del par.</p></div>
+<section><p class="k">02 · Tabla fundamental</p><h2>Pares fundamentales</h2>
+<div class="ps"><b class="l">En palabras simples</b>La tabla es un diccionario: buscas la forma y copias su traducción. Si hay varias piezas sumadas, se traduce cada una por separado (linealidad). La tercera columna indica para qué valores de s vale cada par.</div>
 <div class="two"><div><table><thead><tr><th>f(t)</th><th>F(s)</th><th>Condición</th></tr></thead><tbody>
 <tr><td>1</td><td>1/s</td><td>s &gt; 0</td></tr><tr><td>t</td><td>1/s²</td><td>s &gt; 0</td></tr><tr><td>tⁿ</td><td>n!/sⁿ⁺¹</td><td>s &gt; 0</td></tr>
 <tr><td>e<sup>at</sup></td><td>1/(s−a)</td><td>s &gt; a</td></tr><tr><td>sin(bt)</td><td>b/(s²+b²)</td><td>s &gt; 0</td></tr><tr><td>cos(bt)</td><td>s/(s²+b²)</td><td>s &gt; 0</td></tr><tr><td>cosh(bt)</td><td>s/(s²−b²)</td><td>s &gt; b</td></tr><tr><td>sinh(bt)</td><td>b/(s²−b²)</td><td>s &gt; b</td></tr></tbody></table>
-<div class="f">4e<sup>2t</sup> + 3sin(5t) ⇒ 4/(s−2) + 15/(s²+25), s &gt; 2</div></div>
+<div class="f">4e<sup>2t</sup> + 3sin(5t) ⇒ 4/(s−2) + 15/(s²+25), s &gt; 2</div>
+<div class="co"><b>Linealidad, Ej. 1:</b> 3 − 2t + 4e<sup>−3t</sup> ⇒ 3/s − 2/s² + 4/(s+3), s &gt; 0. <b>Ej. 2:</b> 2t² − 3t + 1 ⇒ 4/s³ − 3/s² + 1/s, s &gt; 0.</div></div>
 <div class="pn"><h3>Observa la función</h3><select id="pS"><option value="0">Constante: 1</option><option value="1">Rampa: t</option><option value="2">Exponencial: e²ᵗ</option><option value="3">Seno: sin(3t)</option><option value="4">Coseno: cos(3t)</option></select>
 <div class="f" id="pF"></div><svg id="pP" viewBox="0 0 640 190"></svg></div></div></section>
 
-<section><p class="k">Ejemplos resueltos · Linealidad e inversión</p><h2>Ejemplos 1 a 3</h2><p class="mu">Intenta cada uno antes de abrir la solución.</p>
-<div class="two"><div class="pn"><h3>Transformar</h3>
-<details><summary>Ej. 1: f(t) = 3 − 2t + 4e<sup>−3t</sup></summary><p>F(s) = 3/s − 2/s² + 4/(s+3), s &gt; 0. El 4 multiplica la transformada de la exponencial y s &gt; 0 hace converger todos los términos.</p></details>
-<details><summary>Ej. 2: g(t) = 2t² − 3t + 1</summary><p>G(s) = 2·2!/s³ − 3·1!/s² + 1/s = 4/s³ − 3/s² + 1/s, s &gt; 0. Intervienen el factor 2 de la señal y el factorial de 2.</p></details><svg id="x1" viewBox="0 0 640 190"></svg><p class="mu">En el tiempo: f(t) del Ej. 1 (azul) y g(t) del Ej. 2 (naranja).</p></div>
-<div class="pn"><h3>Invertir</h3>
-<details><summary>Ej. 3a: F(s) = 6/s⁴</summary><p>Como ℒ{t³} = 6/s⁴, f(t) = t³. El factorial no se omite.</p></details>
-<details><summary>Ej. 3b: G(s) = (2s+3)/(s²+9)</summary><p>G = 2·s/(s²+9) + 3/(s²+9), así que g(t) = 2cos3t + sin3t. El numerador 3 coincide con ω; si fuera 1, la amplitud sería 1/3.</p></details>
-<div class="co">Para verificar una inversa basta transformar de nuevo la respuesta.</div></div></div></section>
-
-<section><p class="k">05 · Transformada inversa</p><h2>Transformada inversa de Laplace</h2>
+<section><p class="k">03 · Transformada inversa</p><h2>Transformada inversa de Laplace</h2>
 <div class="ps"><b class="l">En palabras simples</b>Es leer el diccionario al revés: reconoces la forma en s y escribes la señal que le corresponde en t.</div>
-<div class="f big">f(t) = ℒ⁻¹{F(s)}</div><div class="pn ex"><h3>El proceso inverso</h3><p>La transformada directa lleva la función desde el tiempo hacia <b>s</b>; la inversa realiza el camino contrario. Para encontrarla, identificamos una forma conocida en la tabla o transformamos la expresión hasta que coincida con un par fundamental.</p><p>La respuesta final debe estar expresada nuevamente en función del tiempo, <b>t</b>.</p></div><div class="co"><b>Unicidad:</b> en funciones continuas por tramos y de orden exponencial, la transformada determina la función en sus puntos de continuidad. Dos funciones que difieren solo en puntos aislados tienen la misma transformada, así que los valores exactos en los saltos requieren una convención. Además, ℒ⁻¹ indica inversión de la transformación; no es el recíproco de F.</div>
-<div class="two"><div class="pn"><h3>Ejemplo directo</h3><div class="f">F(s) = 5/s² &nbsp;⇒&nbsp; f(t) = 5t</div><p>Se reconoce el par t ↔ 1/s².</p>
+<div class="f big">f(t) = ℒ⁻¹{F(s)}</div>
+<p class="mu">ℒ⁻¹ significa «invertir la transformación»; no es el recíproco de F. El resultado debe quedar en función de t.</p>
+<div class="co"><b>Ej. 3:</b> 6/s⁴ ⇒ t³ (el factorial no se omite). (2s+3)/(s²+9) = 2·s/(s²+9) + 3/(s²+9) ⇒ 2cos3t + sin3t; el numerador 3 coincide con ω.</div><div class="two"><div class="pn"><h3>Ejemplo directo</h3><div class="f">F(s) = 5/s² &nbsp;⇒&nbsp; f(t) = 5t</div><p>Se reconoce el par t ↔ 1/s².</p>
 <h3>Selector de pares</h3><select id="iS"><option value="0">1/s</option><option value="1">1/s²</option><option value="2">3/(s−2)</option><option value="3">4/(s²+16)</option><option value="4">2s/(s²+9)</option></select><div class="f" id="iR"></div></div>
 <div class="pn"><h3>f(t) = e²ᵗ y F(s) = 1/(s−2)</h3><svg id="iT" viewBox="0 0 640 190"></svg><svg id="iF" viewBox="0 0 640 190"></svg><p class="mu">Arriba: tiempo t. Abajo: variable s (s &gt; 2). Los ejes son distintos.</p></div></div></section>
 
-<section><p class="k">06 · Fracciones parciales</p><h2>Factores lineales distintos</h2>
-<div class="ps"><b class="l">En palabras simples</b>Una fracción complicada se corta en piezas simples, y cada pieza sí está en el diccionario.</div><div class="pn ex"><h3>¿Por qué usamos fracciones parciales?</h3><p>Una fracción racional puede ser difícil de invertir directamente. Al separarla en fracciones más sencillas, cada término suele corresponder a una transformada conocida, como una exponencial.</p><p>El procedimiento consiste en proponer constantes desconocidas, eliminar denominadores, comparar coeficientes y sustituir los valores obtenidos. Finalmente, invertimos cada término y sumamos las funciones.</p></div>
-<div class="f">F(s) = (5s+8) / [(s+1)(s+3)]</div>
-<span class="step"><b>1</b> A/(s+1) + B/(s+3)</span><span class="step"><b>2</b> 5s+8 = A(s+3) + B(s+1)</span><span class="step"><b>3</b> A = 3/2, B = 7/2</span><span class="step"><b>4</b> invertir cada término</span>
-<div class="f big">f(t) = (3/2)e<sup>−t</sup> + (7/2)e<sup>−3t</sup></div>
-<div class="pn"><svg id="fp" viewBox="0 0 640 190"></svg><div class="lg"><span><i style="background:var(--a)"></i>(3/2)e⁻ᵗ</span><span><i style="background:var(--b)"></i>(7/2)e⁻³ᵗ</span><span><i style="background:var(--c)"></i>Suma</span></div></div></section>
+<section><p class="k">Fracciones parciales</p><h2>Factores distintos y repetidos</h2>
+<div class="ps"><b class="l">En palabras simples</b>Una fracción complicada se corta en piezas simples que sí están en el diccionario. Si un factor se repite, hace falta una pieza por cada repetición.</div>
+<div class="two"><div class="pn"><h3>Distintos</h3><div class="f">F(s) = (5s+8)/[(s+1)(s+3)]</div><span class="step"><b>1</b> A/(s+1) + B/(s+3)</span><span class="step"><b>2</b> 5s+8 = A(s+3)+B(s+1)</span><span class="step"><b>3</b> A = 3/2, B = 7/2</span><div class="f">f(t) = (3/2)e<sup>−t</sup> + (7/2)e<sup>−3t</sup></div><svg id="fp" viewBox="0 0 640 190"></svg></div>
+<div class="pn"><h3>Repetidos</h3><div class="f">F(s) = (2s+5)/(s+1)²</div><span class="step"><b>1</b> A/(s+1) + B/(s+1)²</span><span class="step"><b>2</b> 2s+5 = A(s+1)+B</span><span class="step"><b>3</b> A = 2, B = 3</span><div class="f">f(t) = 2e<sup>−t</sup> + 3te<sup>−t</sup></div><svg id="rp" viewBox="0 0 640 190"></svg></div></div></section>
 
-<section><p class="k">07 · Fracciones parciales</p><h2>Factores lineales repetidos</h2>
-<div class="ps"><b class="l">En palabras simples</b>Si un factor aparece dos veces, hace falta una pieza por cada repetición.</div><div class="pn ex"><h3>¿Qué cambia si el factor se repite?</h3><p>Si el denominador contiene <b>(s+1)²</b>, no basta con incluir una sola fracción. Debemos considerar una fracción para cada potencia: una con <b>(s+1)</b> y otra con <b>(s+1)²</b>.</p><p>Esta estructura permite representar correctamente la fracción original y obtener términos cuya inversa conocemos: una exponencial y una exponencial multiplicada por el tiempo.</p></div>
-<div class="two"><div><div class="f">F(s) = (2s+5)/(s+1)² = A/(s+1) + B/(s+1)²</div>
-<p>Multiplicando por (s+1)²: 2s+5 = A(s+1) + B, de donde A = 2 y B = 3.</p>
-<div class="f">F(s) = 2/(s+1) + 3/(s+1)²</div><div class="f big">f(t) = 2e<sup>−t</sup> + 3t·e<sup>−t</sup></div></div>
-<div class="pn"><svg id="rp" viewBox="0 0 640 190"></svg><div class="lg"><span><i style="background:var(--a)"></i>2e⁻ᵗ</span><span><i style="background:var(--b)"></i>3te⁻ᵗ</span><span><i style="background:var(--c)"></i>Suma</span></div></div></div></section>
-
-<section><p class="k">08 · Inversa con cuadrática irreducible</p><h2>Completar el cuadrado</h2>
+<section><p class="k">Inversa con cuadrática irreducible</p><h2>Completar el cuadrado</h2>
 <div class="ps"><b class="l">En palabras simples</b>Si el denominador no se puede factorizar, lo reescribimos como (s+a)² + b². Esa forma corresponde a una oscilación que se apaga.</div>
 <div class="f">F(s) = (3s+7)/(s²+4s+13)</div>
 <div class="two"><div><span class="step"><b>1</b> s²+4s+13 = (s+2)²+9</span><span class="step"><b>2</b> 3s+7 = 3(s+2) + 1</span>
@@ -169,69 +137,44 @@ body{font-size:17px}.mu{font-size:15px}svg text{font-size:12px}
 <p class="mu">Comprobación: ℒ[3e⁻²ᵗcos3t] = 3(s+2)/[(s+2)²+9] y ℒ[(1/3)e⁻²ᵗsin3t] = 1/[(s+2)²+9]. Decaimiento 2 y frecuencia angular 3.</p></div>
 <div class="pn"><svg id="cc" viewBox="0 0 640 190"></svg><p class="mu">Azul: f(t). Naranja punteada: envolvente ±√(9+1/9)·e⁻²ᵗ.</p></div></div></section>
 
-<section><p class="k">09 · Traslación en s</p><h2>Primer teorema de traslación</h2>
+<section><p class="k">04 · Traslación en s</p><h2>Primer teorema de traslación</h2>
 <div class="ps"><b class="l">En palabras simples</b>Multiplicar por e<sup>at</sup> en el tiempo corre la gráfica en s hacia la derecha. Si la señal se apaga (e<sup>−at</sup>), se corre hacia la izquierda.</div>
-<div class="f big">ℒ{e<sup>at</sup>·f(t)} = F(s − a)</div><div class="pn ex"><h3>Interpretación del desplazamiento</h3><p>Multiplicar una función por <b>e<sup>at</sup></b> en el dominio del tiempo provoca un desplazamiento horizontal de su transformada: donde antes aparecía <b>s</b>, ahora aparece <b>s−a</b>.</p><p>Por eso, el procedimiento práctico consiste en transformar primero la función base y luego sustituir la variable. El parámetro <b>a</b> determina cuánto se desplaza la expresión.</p></div>
+<div class="f big">ℒ{e<sup>at</sup>·f(t)} = F(s − a)</div>
 <div class="two"><div class="pn"><h3>Ejemplo: e²ᵗ·sin(3t)</h3><div class="f">ℒ{sin 3t} = 3/(s²+9)</div><p>Sustituimos s por s−2:</p><div class="f big">3/[(s−2)²+9], s &gt; 2</div>
 <div class="co">Con e<sup>−at</sup> el reemplazo es s → s+a.</div></div>
 <div class="pn"><h3>Desplazamiento interactivo</h3><label>a = <b id="shV"></b><input id="sh" type="range" min="-3" max="4" step=".5" value="2"></label>
-<div class="f" id="shF"></div><svg id="shP" viewBox="0 0 640 190"></svg><div class="lg"><span><i style="background:var(--a)"></i>Original</span><span><i style="background:var(--b)"></i>Desplazada</span></div><svg id="shT" viewBox="0 0 640 190"></svg><p class="mu">Arriba (en s): F(s) y F(s−a). Abajo (en t): sin 3t y e<sup>at</sup>·sin 3t.</p></div></div></section>
+<div class="f" id="shF"></div><svg id="shP" viewBox="0 0 640 190"></svg><div class="lg"><span><i style="background:var(--a)"></i>Original</span><span><i style="background:var(--b)"></i>Desplazada</span></div><svg id="shT" viewBox="0 0 640 190"></svg><p class="mu">Arriba (en s): F(s) y F(s−a). Abajo (en t): sin 3t y e<sup>at</sup>·sin 3t.</p></div></div>
+<div class="co"><b>Ej. 4:</b> t²e<sup>−3t</sup> ⇒ 2/(s+3)³, s &gt; −3. <b>Ej. 5:</b> e<sup>2t</sup>cos4t ⇒ (s−2)/[(s−2)²+16], s &gt; 2 (se desplazan todas las apariciones de s).</div></section>
 
-<section><p class="k">Ejemplos resueltos · Traslación en s</p><h2>Ejemplos 4 y 5</h2>
-<div class="two"><div><div class="pn"><h3>Ej. 4: t²e<sup>−3t</sup></h3><p>Como ℒ{t²} = 2/s³, se sustituye s por s+3:</p><div class="f big">F(s) = 2/(s+3)³, s &gt; −3</div><p class="mu">La exponencial reduce la señal sin mover su inicio; aunque t² crece, el producto decae.</p></div>
-<div class="pn"><h3>Ej. 5: e<sup>2t</sup>cos4t</h3><div class="f big">G(s) = (s−2)/[(s−2)²+16], s &gt; 2</div><p class="mu">Se desplazan el numerador y el cuadrado del denominador: todas las apariciones de s.</p></div>
-<div class="pn"><h3>Lectura inversa</h3><div class="f">ℒ⁻¹{5/[(s+1)²+25]} = e<sup>−t</sup>sin5t</div><p class="mu">Frecuencia 5 y decaimiento 1; la señal existe desde el origen, sin retardo.</p></div></div>
-<div><div class="pn"><h3>t²e<sup>−3t</sup></h3><svg id="x4" viewBox="0 0 640 190"></svg></div><div class="pn"><h3>e<sup>2t</sup>cos4t y su envolvente</h3><svg id="x5" viewBox="0 0 640 190"></svg><p class="mu">Envolvente creciente: por eso la convergencia exige s &gt; 2.</p></div></div></div></section>
-
-<section><p class="k">10 · Traslación en t</p><h2>Segundo teorema de traslación</h2>
-<div class="ps"><b class="l">En palabras simples</b>Un retraso en el tiempo se convierte en multiplicar por e<sup>−as</sup>. El escalón es un interruptor que enciende la señal justo en t = a.</div>
-<div class="f big">ℒ{u(t−a)·f(t−a)} = e<sup>−as</sup>·F(s)</div><div class="pn ex"><h3>Interpretación del retardo</h3><p>El escalón unitario mantiene la señal apagada antes del instante <b>a</b> y la activa a partir de ese momento. La expresión <b>f(t−a)</b> desplaza también la forma de la señal, de modo que comienza en el nuevo instante sin perder su perfil.</p><p>En el dominio de Laplace, ese retraso aparece como el factor multiplicativo <b>e<sup>−as</sup></b>.</p></div>
+<section><p class="k">05 · Traslación en t</p><h2>Segundo teorema de traslación</h2>
+<div class="ps"><b class="l">En palabras simples</b>Un retraso en el tiempo se convierte en multiplicar por e<sup>−as</sup>. El escalón es un interruptor que enciende la señal justo en t = a. La señal conserva su forma; solo empieza más tarde.</div>
+<div class="f big">ℒ{u(t−a)·f(t−a)} = e<sup>−as</sup>·F(s)</div>
 <div class="two"><div class="pn"><h3>Escalón unitario</h3><div class="f">u(t−a) = 0 si t &lt; a; 1 si t ≥ a</div><p>Activa la señal en t = a.</p>
 <h3>Rampa retrasada</h3><div class="f">g(t) = u(t−2)(t−2) ⇒ G(s) = e⁻²ˢ/s²</div></div>
 <div class="pn"><h3>Modifica el retardo</h3><label>a = <b id="dlV"></b><input id="dl" type="range" min="0" max="5" step=".5" value="2"></label>
-<svg id="dlP" viewBox="0 0 640 190"></svg><div class="f" id="dlF"></div></div></div></section>
+<svg id="dlP" viewBox="0 0 640 190"></svg><div class="f" id="dlF"></div></div></div>
+<div class="co"><b>Camino inverso, Ejemplo 9:</b> G(s) = e⁻²ˢ/(s+3)². 1) Separar e⁻²ˢ. 2) Invertir el resto: 1/(s+3)² ⇒ t·e⁻³ᵗ. 3) Sustituir t por t−2 en toda la señal. 4) Agregar el escalón: g(t) = u₂(t)(t−2)e⁻³⁽ᵗ⁻²⁾.</div></section>
 
-<section><p class="k">11 · Escalón y retardo</p><h2>Encender no es retardar</h2>
+<section><p class="k">Escalón y retardo</p><h2>Encender no es retardar</h2>
 <div class="ps"><b class="l">En palabras simples</b><b>Encender</b>: la señal ya existía y solo la vemos desde a. <b>Retardar</b>: la señal arranca desde cero, pero en el instante a.</div>
 <p>u<sub>a</sub>(t)f(t) conserva la señal original desde a; u<sub>a</sub>(t)f(t−a) reproduce f desde su inicio, pero a partir de a. Antes de aplicar la propiedad hay que escribir el argumento como t − a.</p>
 <div class="two"><div class="pn"><h3>Ejemplo 10: seno activado</h3><div class="f">h(t) = u<sub>π</sub>(t)sin t = −u<sub>π</sub>(t)sin(t−π)</div><div class="f big">H(s) = −e<sup>−πs</sup>/(s²+1), s &gt; 0</div><p class="mu">Omitir la reescritura da el signo opuesto.</p>
 <h3>Ejemplo 14: polinomio activado</h3><div class="f">g(t) = u₂(t)t², t = τ+2 ⇒ t² = τ²+4τ+4</div><div class="f big">G(s) = e<sup>−2s</sup>(2/s³ + 4/s² + 4/s)</div></div>
 <div class="pn"><svg id="es" viewBox="0 0 640 190"></svg><div class="lg"><span><i style="background:var(--a)"></i>u₂(t)·t²</span><span><i style="background:var(--b)"></i>u₂(t)·(t−2)²</span></div><p class="mu">La primera enciende con valor 4; la segunda, con valor 0.</p></div></div></section>
 
-<section><p class="k">12 · Las dos traslaciones juntas</p><h2>Inversa con amortiguamiento y retardo</h2>
-<div class="f">F(s) = e<sup>−2s</sup>(s+1)/[(s+1)²+9]</div>
-<div class="two"><div><p>1) Separar e⁻²ˢ. 2) Invertir el resto: f₀(t) = e⁻ᵗcos3t. 3) Sustituir t por t−2 en toda la señal. 4) Agregar el escalón.</p>
-<div class="f big">f(t) = u₂(t)e<sup>−(t−2)</sup>cos[3(t−2)], s &gt; −1</div>
-<div class="co">El factor e⁻²ˢ no se convierte en una exponencial temporal multiplicativa.</div>
-<p class="mu">Ejemplo 9: G(s) = e⁻²ˢ/(s+3)² ⇒ g(t) = u₂(t)(t−2)e⁻³⁽ᵗ⁻²⁾.</p></div>
-<div class="pn"><svg id="cb" viewBox="0 0 640 190"></svg></div></div></section>
-
-<section><p class="k">13 · Señales por tramos</p><h2>Pulso rectangular con escalones</h2>
-<div class="ps"><b class="l">En palabras simples</b>Un pulso es un interruptor que enciende en a y otro que apaga en b. La resta de los dos escalones deja la señal activa solo entre ambos.</div><div class="pn ex"><h3>Cómo construir la expresión</h3><p>Para encender una señal en <b>t=a</b>, usamos un escalón <b>u(t−a)</b>. Para apagarla en <b>t=b</b>, restamos otro escalón. Así, la diferencia de ambos vale uno únicamente entre los dos instantes.</p><p>Multiplicamos esa diferencia por la amplitud para obtener el nivel deseado. La gráfica permite comprobar visualmente dónde comienza y termina el tramo activo.</p><h3>Lectura de sus parámetros</h3><p><b>A</b> determina la altura del pulso, <b>a</b> indica el instante de inicio y <b>b</b> el instante de finalización. La duración del pulso es <b>b−a</b>.</p><p>La transformada contiene dos exponenciales: una representa el encendido y la otra compensa el apagado. Por eso, modificar los extremos cambia los factores exponenciales de la expresión.</p></div>
-<div class="f big">p(t) = A[u(t−a) − u(t−b)] ⇒ P(s) = A(e<sup>−as</sup> − e<sup>−bs</sup>)/s</div>
+<section><p class="k">06 · Señales por tramos</p><h2>Pulso rectangular con escalones</h2>
+<div class="ps"><b class="l">En palabras simples</b>Un pulso es un interruptor que enciende en a y otro que apaga en b. La resta de los dos escalones deja la señal activa solo entre ambos. A es la altura, a el inicio y b el final (dura b−a).</div><div class="f big">p(t) = A[u(t−a) − u(t−b)] ⇒ P(s) = A(e<sup>−as</sup> − e<sup>−bs</sup>)/s</div>
 <div class="two"><div class="pn"><label>Amplitud A = <b id="pAV"></b><input id="pA" type="range" min="1" max="10" step="1" value="5"></label>
 <label>Inicio a = <b id="pBV"></b><input id="pB" type="range" min="0" max="5" step=".5" value="2"></label>
 <label>Ancho w = <b id="pCV"></b><input id="pC" type="range" min=".5" max="5" step=".5" value="3"></label>
-<div class="f" id="pFo"></div></div><div class="pn"><svg id="pPl" viewBox="0 0 640 190"></svg><p class="mu">Con b = a + w. Un pulso es un escalón que se enciende y otro que lo apaga.</p></div></div></section>
+<div class="f" id="pFo"></div></div><div class="pn"><svg id="pPl" viewBox="0 0 640 190"></svg><p class="mu">Con b = a + w. Un pulso es un escalón que se enciende y otro que lo apaga.</p></div></div>
+<div class="co"><b>Ej. 11:</b> rectángulo p(t) = 2[u₁(t) − u₃(t)] ⇒ P(s) = 2(e⁻ˢ − e⁻³ˢ)/s; P(0) = 4, el área.</div>
+<div class="co"><b>Ej. 12:</b> triángulo r(t) = (t−1)u₁ − 2(t−2)u₂ + (t−3)u₃ ⇒ R(s) = e⁻ˢ(1−e⁻ˢ)²/s²; R(0) = 1, el área (base 2, altura 1).</div></section>
 
-<section><p class="k">14 · Pulsos con rampas</p><h2>Rectángulo y triángulo</h2>
-<div class="two"><div><div class="pn"><h3>Ejemplo 11: rectángulo</h3><div class="f">p(t) = 2[u₁(t) − u₃(t)] ⇒ P(s) = 2(e⁻ˢ − e⁻³ˢ)/s</div><p class="mu">P(0) = 4: es el área, con singularidad removible en s = 0.</p></div>
-<div class="pn"><h3>Ejemplo 12: triángulo</h3><div class="f">r(t) = (t−1)u₁ − 2(t−2)u₂ + (t−3)u₃</div><div class="f">R(s) = (e⁻ˢ − 2e⁻²ˢ + e⁻³ˢ)/s² = e⁻ˢ(1−e⁻ˢ)²/s²</div><p class="mu">R(0) = 1 (área). Para t &gt; 3 las rampas se cancelan.</p></div></div>
-<div class="pn"><svg id="tr" viewBox="0 0 640 190"></svg><div class="lg"><span><i style="background:var(--a)"></i>Rectángulo (área 4)</span><span><i style="background:var(--b)"></i>Triángulo (área 1)</span></div></div></div></section>
-
-<section><p class="k">15 · Señal amortiguada</p><h2>Exponencial por seno</h2>
-<div class="ps"><b class="l">En palabras simples</b><b>α</b> dice qué tan rápido se apaga la señal; <b>ω</b>, qué tan rápido oscila. Mira cómo cambia la gráfica al mover los deslizadores.</div>
-<div class="f big">ℒ{A·e<sup>−αt</sup>·sin(ωt)} = Aω / [(s+α)² + ω²]</div><div class="pn ex"><h3>Qué representa cada parámetro</h3><p><b>A</b> es la amplitud inicial, <b>α</b> controla la rapidez con la que disminuye la envolvente y <b>ω</b> determina la rapidez de las oscilaciones.</p><p>Cuando aumenta <b>α</b>, la señal pierde amplitud más rápidamente. Cuando aumenta <b>ω</b>, aparecen más ciclos en el mismo intervalo de tiempo. La transformada incorpora el amortiguamiento mediante el desplazamiento <b>s+α</b>.</p></div>
-<div class="two"><div class="pn"><label>α = <b id="dAV"></b><input id="dA" type="range" min=".1" max="2" step=".1" value=".5"></label>
-<label>ω = <b id="dWV"></b><input id="dW" type="range" min="1" max="8" step="1" value="4"></label>
-<label>A = <b id="dMV"></b><input id="dM" type="range" min="1" max="8" step="1" value="5"></label>
-<div class="f" id="dF"></div><p class="mu">Es el primer teorema aplicado a sin(ωt) con a = −α.</p></div>
-<div class="pn"><svg id="dP" viewBox="0 0 640 190"></svg><p class="mu">Línea punteada: envolvente ±A·e⁻ᵅᵗ.</p></div></div></section>
-
-<section><p class="k">16 · Telecomunicaciones</p><h2>Pulso amortiguado retrasado</h2>
+<section><p class="k">Telecomunicaciones</p><h2>Pulso amortiguado retrasado</h2>
 <div class="ps"><b class="l">En palabras simples</b>Piensa en un eco: llega tarde (retardo) y se va debilitando (amortiguamiento).</div>
 <p>Una señal que llega con retraso d y decae combina ambos teoremas. <b>Ejemplo 15:</b> v(t) = 2u<sub>1/2</sub>(t)e<sup>−2(t−1/2)</sup>sin[3(t−1/2)] V ⇒ V(s) = e<sup>−s/2</sup>·6/[(s+2)²+9], s &gt; −2 (6 = 2·3; unidades V·s). Los deslizadores usan amplitud 1.</p>
-<div class="f big">x(t) = u(t−d)·e<sup>−α(t−d)</sup>·sin(ω(t−d)) ⇒ X(s) = ω·e<sup>−ds</sup> / [(s+α)² + ω²]</div><div class="pn ex"><h3>Interpretación del modelo</h3><p>La señal permanece en cero antes del retardo. A partir de ese instante comienza una oscilación cuya amplitud disminuye exponencialmente.</p><p>Este ejemplo combina dos propiedades estudiadas: el amortiguamiento produce un desplazamiento en <b>s</b>, mientras que el escalón unitario introduce el retardo y genera el factor exponencial adicional en la transformada.</p></div>
+<div class="f big">x(t) = u(t−d)·e<sup>−α(t−d)</sup>·sin(ω(t−d)) ⇒ X(s) = ω·e<sup>−ds</sup> / [(s+α)² + ω²]</div><div class="co"><b>Camino inverso (de F(s) a f(t)):</b> separa e<sup>−ds</sup>, invierte el resto y sustituye t por t−d en toda la señal; luego agrega el escalón. Ejemplo: F(s) = e<sup>−2s</sup>(s+1)/[(s+1)²+9] ⇒ f(t) = u₂(t)e<sup>−(t−2)</sup>cos[3(t−2)], s &gt; −1.</div>
 <div class="two"><div class="pn"><label>Retardo d = <b id="tDV"></b><input id="tD" type="range" min="0" max="5" step=".5" value="2"></label>
 <label>α = <b id="tAV"></b><input id="tA" type="range" min=".1" max="2" step=".1" value=".5"></label>
 <label>ω = <b id="tWV"></b><input id="tW" type="range" min="1" max="8" step="1" value="4"></label>
@@ -260,28 +203,6 @@ body{font-size:17px}.mu{font-size:15px}svg text{font-size:12px}
 <div class="pn"><svg id="cmp" viewBox="0 0 640 190"></svg><p class="mu">Los dos caminos dan la misma curva: y(t) = 2e⁻ᵗ − e⁻²ᵗ.</p></div></div>
 <div class="ps"><b class="l">En palabras simples</b>Para esta ecuación los dos caminos son cortos. La ventaja de Laplace aparece cuando la entrada salta, se retrasa o es un pulso, como en telecomunicaciones.</div></section>
 
-<section><p class="k">Comparación · Cuando entra un pulso</p><h2>Ahora con un pulso: aquí Laplace gana</h2>
-<div class="f big">y″ + 3y′ + 2y = u(t−1) − u(t−3), &nbsp; y(0) = 0, &nbsp; y′(0) = 0</div>
-<p class="mu">Un sistema amortiguado en reposo recibe un pulso de valor 1 entre t = 1 y t = 3.</p>
-<div class="two"><div class="pn"><h3>Sin Laplace: por tramos</h3>
-<span class="step"><b>1</b> Partir el tiempo: 0 ≤ t &lt; 1, 1 ≤ t &lt; 3 y t ≥ 3</span>
-<span class="step"><b>2</b> Tramo 1: sin entrada y en reposo ⇒ y = 0</span>
-<span class="step"><b>3</b> Tramo 2: solución particular ½ más la homogénea; imponer y(1) = 0 y y′(1) = 0</span>
-<div class="f">y = ½ − e<sup>−(t−1)</sup> + ½e<sup>−2(t−1)</sup></div>
-<span class="step"><b>4</b> Tramo 3: solo la homogénea; calcular y(3) y y′(3) del tramo anterior y resolver otro sistema</span>
-<div class="f">y = (1−e<sup>−2</sup>)e<sup>−(t−3)</sup> − ½(1−e<sup>−4</sup>)e<sup>−2(t−3)</sup></div>
-<p class="mu">Hay que empatar y y y′ en cada salto (t = 1 y t = 3): más cuentas y más oportunidades de error.</p></div>
-<div class="pn"><h3>Con Laplace: una sola fórmula</h3>
-<span class="step"><b>1</b> Transformar: (s² + 3s + 2)Y = (e<sup>−s</sup> − e<sup>−3s</sup>)/s</span>
-<span class="step"><b>2</b> Despejar: Y = (e<sup>−s</sup> − e<sup>−3s</sup>) · 1/[s(s+1)(s+2)]</span>
-<span class="step"><b>3</b> Fracciones parciales: 1/[s(s+1)(s+2)] = ½/s − 1/(s+1) + ½/(s+2)</span>
-<span class="step"><b>4</b> Invertir con la tabla: h(t) = ½ − e<sup>−t</sup> + ½e<sup>−2t</sup></span>
-<span class="step"><b>5</b> Segundo teorema de traslación:</span>
-<div class="f big">y(t) = u(t−1)h(t−1) − u(t−3)h(t−3)</div>
-<p class="mu">Los tres tramos salen solos de esta expresión: no se empata nada a mano.</p></div></div>
-<div class="pn"><svg id="cmp2" viewBox="0 0 640 190"></svg><div class="lg"><span><i style="background:var(--b)"></i>Entrada: pulso entre t = 1 y t = 3</span><span><i style="background:var(--c)"></i>Respuesta y(t)</span></div></div>
-<div class="ps"><b class="l">En palabras simples</b>Con Laplace, un cambio brusco en la entrada es solo un factor e<sup>−as</sup>. Por eso se usa en circuitos, control y comunicaciones, donde las señales se encienden y se apagan todo el tiempo.</div></section>
-
 <section><p class="k">Comparación · Telecomunicaciones</p><h2>Circuito RLC recibe un pulso de voltaje</h2>
 <p>Resistencia, bobina y condensador en serie: R = 2 Ω, L = 1 H, C = 0,2 F. Entra un pulso de 1 V durante 2 s y medimos el voltaje del condensador v(t), partiendo del reposo.</p>
 <div class="f big">v″ + 2v′ + 5v = 5[u(t) − u(t−2)], &nbsp; v(0) = 0, &nbsp; v′(0) = 0</div>
@@ -299,45 +220,21 @@ body{font-size:17px}.mu{font-size:15px}svg text{font-size:12px}
 <span class="step"><b>4</b> Invertir con la tabla: h(t) = 1 − e<sup>−t</sup>(cos2t + ½sin2t)</span>
 <span class="step"><b>5</b> Segundo teorema de traslación:</span>
 <div class="f big">v(t) = h(t) − u(t−2)h(t−2)</div>
-<p class="mu">Reutiliza las herramientas de las diapositivas anteriores: fracciones parciales, cuadrado completo y retardo.</p></div></div>
+<p class="mu">Reutiliza lo visto: fracciones parciales, traslación en s y retardo.</p></div></div>
 <div class="pn"><svg id="cmp3" viewBox="0 0 640 190"></svg><div class="lg"><span><i style="background:var(--b)"></i>Entrada: pulso de 1 V entre t = 0 y t = 2</span><span><i style="background:var(--c)"></i>Voltaje del condensador v(t)</span></div></div>
-<div class="co"><b>Lectura en el plano s:</b> el denominador s² + 2s + 5 tiene polos en s = −1 ± 2i. La parte real (−1) dice que la oscilación se apaga; la parte imaginaria (2) dice qué tan rápido vibra. Lo vimos en la diapositiva de polos.</div>
+<div class="co"><b>Lectura en el plano s:</b> el denominador s² + 2s + 5 tiene polos en s = −1 ± 2i. La parte real (−1) dice que la oscilación se apaga; la parte imaginaria (2) dice qué tan rápido vibra. En la siguiente diapositiva lo exploramos.</div>
 <div class="ps"><b class="l">En palabras simples</b>El voltaje sube, se pasa un poco del valor de entrada y vibra mientras se apaga. Al terminar el pulso, el circuito sigue vibrando un rato. Laplace entrega todo eso en una sola fórmula.</div></section>
 
-<section><p class="k">Práctica · Transformación e inversión</p><h2>Pon a prueba tus métodos</h2><p class="mu">Resuelve primero; toca el ítem para ver la solución.</p>
-<div class="two"><div class="pn"><h3>Transformar</h3>
-<details><summary>ℒ{3t² − 2t + 4}</summary><p>6/s³ − 2/s² + 4/s, s &gt; 0.</p></details>
-<details><summary>ℒ{e<sup>−4t</sup>sin2t}</summary><p>2/[(s+4)²+4], s &gt; −4.</p></details>
-<details><summary>ℒ{t³e<sup>2t</sup>}</summary><p>6/(s−2)⁴, s &gt; 2.</p></details></div>
-<div class="pn"><h3>Invertir</h3>
-<details><summary>5/(s+3)</summary><p>5e<sup>−3t</sup>.</p></details>
-<details><summary>(4s+6)/(s²+9)</summary><p>4cos3t + 2sin3t.</p></details>
-<details><summary>(s+4)/[(s+1)(s+2)]</summary><p>= 3/(s+1) − 2/(s+2) ⇒ 3e<sup>−t</sup> − 2e<sup>−2t</sup>.</p></details>
-<details><summary>1/(s+2)³</summary><p>(t²/2)e<sup>−2t</sup>.</p></details>
-<details><summary>(2s+5)/(s²+2s+5)</summary><p>(s+1)²+4 y 2s+5 = 2(s+1)+3 ⇒ e<sup>−t</sup>(2cos2t + (3/2)sin2t).</p></details></div></div></section>
-
-<section><p class="k">Práctica · Retardos y señales</p><h2>Escalones, pulsos y retardos</h2><p class="mu">Antes de aplicar la propiedad, escribe el argumento como t − a.</p>
-<div class="two"><div class="pn"><h3>Transformar</h3>
-<details><summary>u₃(t)(t−3)²</summary><p>2e<sup>−3s</sup>/s³, s &gt; 0.</p></details>
-<details><summary>u₁(t)cos2t</summary><p>cos[2(τ+1)] = cos2·cos2τ − sin2·sin2τ ⇒ e<sup>−s</sup>(s·cos2 − 2sin2)/(s²+4).</p></details>
-<details><summary>Ventana de amplitud 3 entre t = 2 y t = 5</summary><p>3[u₂ − u₅] ⇒ 3(e<sup>−2s</sup> − e<sup>−5s</sup>)/s; en s = 0 vale 9, el área.</p></details>
-<details><summary>u₂(t)·t frente a u₂(t)(t−2)</summary><p>e<sup>−2s</sup>(1/s² + 2/s) frente a e<sup>−2s</sup>/s²: difieren en una constante 2 activada en t = 2.</p></details>
-<details><summary>3u<sub>1/2</sub>(t)e<sup>−(t−1/2)</sup>sin[2(t−1/2)] V</summary><p>V(s) = 6e<sup>−s/2</sup>/[(s+1)²+4]: tasa 1 s⁻¹, frecuencia 2 rad/s, retardo 0,5 s.</p></details></div>
-<div class="pn"><h3>Invertir y comparar</h3>
-<details><summary>e<sup>−4s</sup>/(s+1)²</summary><p>u₄(t)(t−4)e<sup>−(t−4)</sup>.</p></details>
-<details><summary>e<sup>−s</sup>(s+2)/[(s+2)²+16]</summary><p>u₁(t)e<sup>−2(t−1)</sup>cos[4(t−1)], s &gt; −2.</p></details>
-<details><summary>Si F(s) = 1/(s+1): e<sup>2t</sup>f(t) frente a u₂(t)f(t−2)</summary><p>1/(s−1) con s &gt; 1 (exponencial creciente) frente a e<sup>−2s</sup>/(s+1) con s &gt; −1 (copia retardada).</p></details>
-<details><summary>Refuta ℒ{fg} = ℒ{f}·ℒ{g}</summary><p>Con f = g = 1: ℒ{fg} = 1/s, pero ℒ{f}ℒ{g} = 1/s².</p></details></div></div></section>
-
-<section><p class="k">17 · Plano s</p><h2>Polos y comportamiento en el tiempo</h2>
+<section><p class="k">07 · Plano s</p><h2>Polos y comportamiento en el tiempo</h2>
 <div class="ps"><b class="l">En palabras simples</b><b>Polos a la izquierda:</b> la señal se apaga. <b>Sobre el eje vertical:</b> oscila sin parar. <b>A la derecha:</b> crece sin control.</div>
 <div class="f big">ℒ{e<sup>σt</sup>sin ωt} = ω / [(s−σ)² + ω²], polos en s = σ ± iω</div>
 <div class="two"><div class="pn"><label>σ (parte real) = <b id="zAV"></b><input id="zA" type="range" min="-2" max="1" step=".1" value="-.5"></label>
 <label>ω (parte imaginaria) = <b id="zWV"></b><input id="zW" type="range" min="1" max="8" step="1" value="4"></label>
 <span id="zT" class="tag"></span><svg id="zp" viewBox="0 0 640 190"></svg><p class="mu">Plano s: los puntos naranjas son los polos.</p></div>
-<div class="pn"><svg id="zt" viewBox="0 0 640 190"></svg><p class="mu">σ fija la envolvente (primer teorema de traslación) y ω la oscilación.</p></div></div></section>
+<div class="pn"><svg id="zt" viewBox="0 0 640 190"></svg><p class="mu">σ fija la envolvente (primer teorema de traslación) y ω la oscilación.</p></div></div>
+<div class="co"><b>Ejemplos:</b> F(s) = 3/[(s+1)²+9] tiene polos en −1 ± 3i ⇒ f(t) = e⁻ᵗsin3t, que se apaga y oscila. F(s) = 1/(s−2) tiene un polo en 2 ⇒ f(t) = e²ᵗ, que crece sin control.</div></section>
 
-<section><p class="k">18 · Comprobación</p><h2>Errores frecuentes y preguntas de cierre</h2>
+<section><p class="k">Comprobación</p><h2>Errores frecuentes y preguntas de cierre</h2>
 <div class="two"><div><table><thead><tr><th>Error</th><th>Corrección</th></tr></thead><tbody>
 <tr><td>Leer F(s+a) como retardo</td><td>Con a &gt; 0 es una exponencial decreciente e<sup>−at</sup></td></tr>
 <tr><td>Confundir u<sub>a</sub>(t)f(t) con una copia retardada</td><td>Reescribir con el tiempo local t−a</td></tr>
@@ -351,6 +248,20 @@ body{font-size:17px}.mu{font-size:15px}svg text{font-size:12px}
 <details><summary>¿Qué factor en s representa un retardo de 2 unidades?</summary><p class="mu">e⁻²ˢ.</p></details>
 <details><summary>¿Por qué un pulso finito tiene transformada en s = 0?</summary><p class="mu">Su integral es finita y vale su área con signo.</p></details></div></div></section>
 
+<section><p class="k">Práctica</p><h2>Pon a prueba tus métodos</h2><p class="mu">Resuelve primero; toca el ítem para ver la solución.</p>
+<div class="two"><div class="pn"><h3>Transformar</h3>
+<details><summary>ℒ{3t² − 2t + 4}</summary><p>6/s³ − 2/s² + 4/s, s &gt; 0.</p></details>
+<details><summary>ℒ{e<sup>−4t</sup>sin2t}</summary><p>2/[(s+4)²+4], s &gt; −4.</p></details>
+<details><summary>ℒ{t³e<sup>2t</sup>}</summary><p>6/(s−2)⁴, s &gt; 2.</p></details>
+<details><summary>u₃(t)(t−3)²</summary><p>2e<sup>−3s</sup>/s³, s &gt; 0.</p></details>
+<details><summary>Ventana de amplitud 3 entre t = 2 y t = 5</summary><p>3[u₂ − u₅] ⇒ 3(e<sup>−2s</sup> − e<sup>−5s</sup>)/s; en s = 0 vale 9, el área.</p></details></div>
+<div class="pn"><h3>Invertir</h3>
+<details><summary>(4s+6)/(s²+9)</summary><p>4cos3t + 2sin3t.</p></details>
+<details><summary>(s+4)/[(s+1)(s+2)]</summary><p>3/(s+1) − 2/(s+2) ⇒ 3e<sup>−t</sup> − 2e<sup>−2t</sup>.</p></details>
+<details><summary>(2s+5)/(s²+2s+5)</summary><p>(s+1)²+4 y 2s+5 = 2(s+1)+3 ⇒ e<sup>−t</sup>(2cos2t + (3/2)sin2t).</p></details>
+<details><summary>e<sup>−4s</sup>/(s+1)²</summary><p>u₄(t)(t−4)e<sup>−(t−4)</sup>.</p></details>
+<details><summary>e<sup>−s</sup>(s+2)/[(s+2)²+16]</summary><p>u₁(t)e<sup>−2(t−1)</sup>cos[4(t−1)], s &gt; −2.</p></details></div></div></section>
+
 <section><p class="k">Cierre</p><h2>Ideas que nos llevamos</h2>
 <div class="two"><div class="pn"><b>01 · Definición y existencia</b><br><span class="mu">La integral converge para s mayor que cierto valor.</span></div>
 <div class="pn"><b>02 · Linealidad y tabla</b><br><span class="mu">Permiten armar transformadas e inversas por piezas.</span></div>
@@ -362,13 +273,15 @@ body{font-size:17px}.mu{font-size:15px}svg text{font-size:12px}
 <rect x="235" y="30" width="170" height="60" rx="12" style="fill:var(--pn);stroke:var(--bd)"/><text x="320" y="56" text-anchor="middle" style="font-size:13px;fill:var(--tx)">Ecuación algebraica</text><text x="320" y="75" text-anchor="middle" style="font-size:12px">en s: despejar Y(s)</text>
 <line class="flow" x1="409" y1="60" x2="450" y2="60" style="stroke:var(--a);stroke-width:2"/><polygon points="458,60 449,55 449,65" style="fill:var(--a)"/><text x="433" y="50" text-anchor="middle" style="font-size:15px;font-weight:700;fill:var(--a)">ℒ⁻¹</text>
 <rect x="462" y="30" width="170" height="60" rx="12" style="fill:var(--pn);stroke:var(--bd)"/><text x="547" y="56" text-anchor="middle" style="font-size:13px;fill:var(--tx)">Solución y(t)</text><text x="547" y="75" text-anchor="middle" style="font-size:12px">respuesta en el tiempo</text></svg>
+<div class="co"><b>Por qué importa:</b> cuando la entrada salta, se retrasa o es un pulso, Laplace da en una sola fórmula lo que por tramos es largo y fácil de equivocar.</div>
+<div class="co"><b>Semana 13:</b> transformada de derivadas y solución de EDO con Laplace (la regla ℒ{y′} = sY − y(0) que usamos en las comparaciones).</div>
 <h2 style="text-align:center;margin-top:18px">¡Gracias por su atención!</h2>
 <p class="mu"><b>Referencias:</b> Edwards, C. H. y Penney, D. E. (2009). <i>Ecuaciones diferenciales y problemas con valores en la frontera</i>. Pearson Educación. · Zill, D. G. (1997). <i>Ecuaciones diferenciales con aplicaciones de modelado</i>. International Thomson Editores. · Hihuaña Hallasi, J. C. Texto universitario, Semana 12.</p></section>
 </div>
 <div id="nav"><button class="bt s" id="pv">← Anterior</button><span id="ct"></span><button class="bt s" id="pb">⏸ Pausar</button><button class="bt" id="nx">Siguiente →</button></div>
 <script>
-let ph=0,pl=!matchMedia("(prefers-reduced-motion:reduce)").matches;const R={},$=i=>document.getElementById(i),v=i=>+$(i).value,E=Math.exp,S=Math.sin,C=Math.cos,T=(i,t)=>{$(i).textContent=t},m=x=>String(x).replace("-","−");
-function P(id,cs,o){const{x0,x1,y0,y1}=o,w=640,h=190,l=34,b=24,X=x=>l+(x-x0)/(x1-x0)*(w-l-10),Y=y=>h-b-(y-y0)/(y1-y0)*(h-b-10);
+let ph=0,pl=!matchMedia("(prefers-reduced-motion:reduce)").matches;const R={},$=i=>document.getElementById(i),v=i=>+(($(i)||{}).value||0),E=Math.exp,S=Math.sin,C=Math.cos,T=(i,t)=>{const e=$(i);if(e)e.textContent=t},m=x=>String(x).replace("-","−");
+function P(id,cs,o){if(!$(id))return;const{x0,x1,y0,y1}=o,w=640,h=190,l=34,b=24,X=x=>l+(x-x0)/(x1-x0)*(w-l-10),Y=y=>h-b-(y-y0)/(y1-y0)*(h-b-10);
 let s=`<line class="ax" x1="${l}" y1="${h-b}" x2="${w-10}" y2="${h-b}"/><line class="ax" x1="${l}" y1="10" x2="${l}" y2="${h-b}"/>`;
 for(let i=0;i<=4;i++){const x=x0+(x1-x0)*i/4;s+=`<text x="${X(x)}" y="${h-7}" text-anchor="middle">${+x.toFixed(1)}</text>`}
 s+=`<text x="2" y="${Y(y1)+8}">${+y1.toFixed(2)}</text><text x="2" y="${Y(y0)}">${+y0.toFixed(2)}</text>`;
@@ -398,13 +311,12 @@ P("fp",[{f:x=>1.5*E(-x)},{f:x=>3.5*E(-3*x)},{f:x=>1.5*E(-x)+3.5*E(-3*x),k:3}],{x
 P("rp",[{f:x=>2*E(-x)},{f:x=>3*x*E(-x)},{f:x=>(2+3*x)*E(-x),k:3}],{x0:0,x1:7,y0:0,y1:2.2});
 P("cc",[{f:x=>E(-2*x)*(3*C(3*x)+S(3*x)/3)},{f:x=>3.0551*E(-2*x),d:1,k:2},{f:x=>-3.0551*E(-2*x),d:1,k:2}],{x0:0,x1:3,y0:-3.2,y1:3.2});
 P("es",[{f:x=>x>=2?x*x:0},{f:x=>x>=2?(x-2)*(x-2):0,k:2}],{x0:0,x1:5,y0:0,y1:25});
-P("cb",[{f:x=>x>=2?E(-(x-2))*C(3*(x-2)):0}],{x0:0,x1:7,y0:-1,y1:1});
 P("tr",[{f:x=>x>=1&&x<3?2:0},{f:x=>x>=1&&x<2?x-1:x>=2&&x<3?3-x:0,k:2}],{x0:0,x1:6,y0:0,y1:2.2});
 P("x1",[{f:x=>3-2*x+4*E(-3*x)},{f:x=>2*x*x-3*x+1,k:2}],{x0:0,x1:3,y0:-4,y1:12});
-P("x4",[{f:x=>x*x*E(-3*x)}],{x0:0,x1:4,y0:0,y1:.08});P("cmp",[{f:x=>2*E(-x)-E(-2*x),k:3}],{x0:0,x1:6,y0:0,y1:1.1});{const hh=x=>.5-E(-x)+.5*E(-2*x);P("cmp2",[{f:x=>x>=1&&x<3?1:0,k:2,d:1},{f:x=>(x>=1?hh(x-1):0)-(x>=3?hh(x-3):0),k:3}],{x0:0,x1:8,y0:0,y1:1.1})}{const g=t=>1-E(-t)*(C(2*t)+.5*S(2*t));P("cmp3",[{f:x=>x>=0&&x<2?1:0,k:2,d:1},{f:x=>g(x)-(x>=2?g(x-2):0),k:3}],{x0:0,x1:8,y0:-.4,y1:1.4})}P("x5",[{f:x=>E(2*x)*C(4*x)},{f:x=>E(2*x),d:1,k:2},{f:x=>-E(2*x),d:1,k:2}],{x0:0,x1:2,y0:-60,y1:60});
+P("x4",[{f:x=>x*x*E(-3*x)}],{x0:0,x1:4,y0:0,y1:.08});P("cmp",[{f:x=>2*E(-x)-E(-2*x),k:3}],{x0:0,x1:6,y0:0,y1:1.1});{const g=t=>1-E(-t)*(C(2*t)+.5*S(2*t));P("cmp3",[{f:x=>x>=0&&x<2?1:0,k:2,d:1},{f:x=>g(x)-(x>=2?g(x-2):0),k:3}],{x0:0,x1:8,y0:-.4,y1:1.4})}P("x5",[{f:x=>E(2*x)*C(4*x)},{f:x=>E(2*x),d:1,k:2},{f:x=>-E(2*x),d:1,k:2}],{x0:0,x1:2,y0:-60,y1:60});
 document.addEventListener("input",U);$("pS").onchange=U;$("iS").onchange=U;
-const SC=[...document.querySelectorAll("section")];let cur=0;
-function go(i){cur=Math.max(0,Math.min(SC.length-1,i));SC.forEach((s,k)=>s.classList.toggle("on",k==cur));T("ct",(cur+1)+" / "+SC.length);$("bar").style.width=(cur+1)/SC.length*100+"%";SC[cur].scrollTop=0;try{history.replaceState(null,"","#s"+(cur+1))}catch(e){}}
+const SC=[...document.querySelectorAll("section")];let cur=0;const N=SC.findIndex(s=>{const k=s.querySelector(".k");return k&&k.textContent=="Cierre"})+1;
+function go(i){cur=Math.max(0,Math.min(SC.length-1,i));SC.forEach((s,k)=>s.classList.toggle("on",k==cur));T("ct",cur<N?(cur+1)+" / "+N:"Apéndice "+(cur-N+1)+" / "+(SC.length-N));$("bar").style.width=(cur<N?(cur+1)/N*100:100)+"%";SC[cur].scrollTop=0;try{history.replaceState(null,"","#s"+(cur+1))}catch(e){}}
 $("pv").onclick=()=>go(cur-1);$("nx").onclick=()=>go(cur+1);
 document.addEventListener("keydown",e=>{if(e.target.tagName=="INPUT"||e.target.tagName=="SELECT")return;if(["ArrowRight","PageDown"," "].includes(e.key))go(cur+1);if(["ArrowLeft","PageUp"].includes(e.key))go(cur-1)});
 (()=>{const a=[],u=[],l=[];for(let i=0;i<=120;i++){const t=8*i/120,x=(24+44*t).toFixed(1),e=Math.exp(-.4*t),f=e*Math.sin(2.6*t);a.push(x+","+(75-55*f).toFixed(1));u.push(x+","+(75-55*e).toFixed(1));l.push(x+","+(75+55*e).toFixed(1))}$("tw").setAttribute("points",a.join(" "));$("te1").setAttribute("points",u.join(" "));$("te2").setAttribute("points",l.join(" "))})();
